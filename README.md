@@ -1,13 +1,16 @@
-# Explicit Dynamics Simulation: Deep Drawing Process
+# Explicit Dynamics: Deep Drawing Process Simulation
 
-![Project Banner](images/banner_placeholder.jpg)
+![Project Banner](Images/DeepDrawing.png)
 ## 📄 Abstract
 **Engineer:** Bishoy Labib | **Type:** Nonlinear Finite Element Analysis (FEA) | **Solver:** Ansys Explicit Dynamics
 
-This project simulates the manufacturing process of deep drawing an aluminum blank into a cylindrical cup. Using Explicit Dynamics, the study analyzes the stress distribution, plastic strain, and deformation behavior of the material. A key focus of this project was the simulation of manufacturing defects—such as tearing, wrinkling, and earing—by manipulating process parameters like punch velocity and friction.
+This project simulates the manufacturing process of deep drawing an aluminum blank into a cylindrical cup. Using Explicit Dynamics, the study analyzes the stress distribution, plastic strain, and deformation behavior of the material. A key focus of this project was the simulation of manufacturing defects as well, such as tearing, wrinkling, and earing—by manipulating process parameters like punch velocity and friction.
+
+![Project Banner](Images/DeepDrawing.png)
 
 ## 🎯 Objective
 The primary goal was to create a realistic 3D simulation of the deep drawing process to:
+1.  Custumize a Nonlinear material 
 1.  Analyze **Total Deformation** and **Equivalent (Von-Mises) Stress**.
 2.  Validate the model using a **Mesh Convergence Study**.
 3.  Simulate and identify common manufacturing defects (Tearing, Earing, Wall Wrinkling).
@@ -54,8 +57,7 @@ A significant portion of this project involved intentionally inducing failures t
 
 ### 1. Tearing (Fracture)
 By altering velocity and material limits, the blank locally reached plastic strain failure, resulting in tearing at the cup base.
-
-![Tearing Defect](images/tearing_placeholder.jpg)
+![Tearing Defect](Images/Tearing.png)
 ### 2. Wrinkling & Earing
 * **Wall Wrinkling:** caused by die geometry issues.
 * **Earing:** observed at the cup rim, requiring trimming operations in real-world scenarios.
