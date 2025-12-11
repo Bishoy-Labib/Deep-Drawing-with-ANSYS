@@ -22,6 +22,7 @@ The assembly consists of four rigid and flexible bodies modeled in 3D:
 * **Punch:** Remote displacement (Translation Y only).
 * **Die & Blank Holder:** Fixed support (representing clamping force).
 * **Blank:** Aluminum sheet (Thickness: 1mm).
+![Stress Results](Images/model.png)
 
 ### 2. Material Properties
 * **Material:** Aluminum (General Non-linear & Explicit).
@@ -47,7 +48,9 @@ The simulation captured the stress variations throughout the drawing phases.
 * **Average Stress:** ~400 MPa.
 * **Maximum Stress:** 610.66 MPa (occuring at critical deformation points).
 
-![Stress Results](images/stress_result_placeholder.jpg)
+![Stress Results](Images/Stress.png)
+![Stress Results](Images/Deformation.png)
+
 ### Plastic Strain
 * **Max Plastic Strain:** 0.3986.
 * This value remained below the failure strain for the successful drawing iteration, indicating a safe manufacturing process.
@@ -58,12 +61,18 @@ A significant portion of this project involved intentionally inducing failures t
 ### 1. Tearing (Fracture)
 By altering velocity and material limits, the blank locally reached plastic strain failure, resulting in tearing at the cup base.
 ![Tearing Defect](Images/Tearing.png)
+![Penetrating Defect](Images/Penetrating.png)
+
 ### 2. Wrinkling & Earing
 * **Wall Wrinkling:** caused by die geometry issues.
 * **Earing:** observed at the cup rim, requiring trimming operations in real-world scenarios.
+![Wrinkling Defect](Images/WallWrinkling.png)
+![Earing Defect](Images/Earing.png)
 
 ## 🚀 Conclusion
 The simulation successfully validated that the deep drawing process for this specific aluminum grade is feasible under controlled friction and velocity parameters. The study highlighted the critical importance of mesh sizing in explicit dynamics, where a balance between element thickness (for bending accuracy) and Courant number (time step size) must be maintained.
+
+![Plastic Strain](Images/PlasticStrain.png)
 
 ---
 *Based on the report "Explicit Dynamics Report – Deep Drawing" by Bishoy Labib.*
